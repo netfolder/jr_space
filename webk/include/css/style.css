@@ -1,8 +1,50 @@
 @charset "utf-8"; 
 
+/* 
+    레이아웃
+*/
+.container{width:1400px; margin:0 auto;}
+#wrap{font-family: 'Noto Sans Korean'; }
+#header .container{position: relative;}
 
 
 
+
+/* 
+    컨텐츠 
+*/
+
+/* 헤더 */
+.header{margin-top:62px}
+.header .h1{position: absolute; background: url("/images/logo.gif") no-repeat 0 0; width: 110px; height:110px; z-index: 3;}
+.header .gnb_case{text-align: center; z-index: 1; padding-top: 31px; position: relative;}
+.header .gnb_case .gnb{font-size: 0;}
+.header .gnb_case .gnb li{display:inline-block;position: relative;}
+.header .gnb_case .gnb li:after{content:""; display: block; position: absolute; right: 0; top:15px; width: 1px; height: 15px; background-color: #c9d3df;}
+.header .gnb_case .gnb li:last-child:after{display: none;}
+.header .gnb_case .gnb li a{font-size: 15px; color: #002856; padding:15px; display: inline-block;}
+.header .ham {z-index: 2; position: absolute; right: 0; top:24px;  width: 60px; height: 60px; border:1px solid #012758; cursor: pointer;}
+
+.header .mobile_left{z-index: 2; position: absolute; left: 0; top:24px;  width: 60px; height: 60px; border:1px solid #012758; cursor: pointer; display: none;}
+
+
+
+
+
+
+
+
+
+/* 
+    설명 : 미디어 쿼리는 max-width 를 사용시 높은 값 부터 낮은 순으로 작성 
+*/
+/* 0 ~ 1400 까지 */
+@media only screen and (max-width: 1400px) {
+    .container{width:100%;}
+    .row{padding:0 5px; box-sizing: border-box;}
+    .header .ham{right: 5px;}
+    .header .mobile_left{left: 5px;}
+}
 /* 0 ~ 1000 까지 */
 @media only screen and (max-width: 1000px) {
     
@@ -14,8 +56,9 @@
 }
 /* 0 ~ 768 까지 */
 @media only screen and (max-width: 768px) {
-
-
+    /* .header .h1{}
+    .header .gnb_case{display: none;}
+    .header .mobile_left{display: block;} */
 }
 /* 0 ~ 360 까지 갤럭시 s5*/
 @media only screen and (max-width: 360px) {
