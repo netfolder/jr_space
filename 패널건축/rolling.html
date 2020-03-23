@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
+
+    <style>
+        *{padding:0; margin:0 }
+        body{height:2000px;}
+
+        .main_rolling{position: relative; height: 73px; background-color: #141c27;}
+        .main_rolling .container{width: 1280px; margin:0 auto;}
+
+        .roll_obj{position: relative;}
+        .roll_obj .slider_wrap{position:relative;overflow:hidden;background:#fff;}
+		.roll_obj .swiper-container {overflow:hidden;position:relative;width:1200px; height: 73px; padding-top:12px; box-sizing: border-box;}
+		.roll_obj .swiper-wrapper {width:100%; height:100%}
+		.roll_obj .swiper-slide {overflow:hidden;position:relative}
+		.roll_obj .swiper-slide a{display: block; position: relative;color: #fff;}
+		.roll_obj .swiper-slide a:after{content:""; position: absolute; width:38px; height:38px; left: 0; top: 0; border:6px solid #c4aa53; background-color:transparent;opacity: 0;}
+		.roll_obj .swiper-slide a:hover:after{opacity: 1; transition: all 0.25s ease-out;}
+		.roll_obj .swiper-pagination{width:100%;text-align:center;position:absolute;left:0;bottom:5%;display: none;}
+		.roll_obj .swiper-pagination-bullet{width:6px;height:6px;margin:0 5px;background:#000;border:2px #000 solid;border-radius:100%;opacity:1}
+		.roll_obj .swiper-pagination-bullet-active{border:2px #000 solid;opacity:1;background:transparent}
+		.roll_obj .swiper-button-prev{width:40px;height:50px;z-index:10;background-size:30px 20px;left:0; top:50%; margin-top:-25px;}
+		.roll_obj .swiper-button-next{width:40px;height:50px;z-index:10;background-size:30px 20px;right:0; top:50%; margin-top:-25px;}
+
+        .modal_roll_obj{position: relative;}
+        .modal_roll_obj .slider_wrap{position:relative;overflow:hidden;background:#fff;}
+		.modal_roll_obj .swiper-container {overflow:hidden;position:relative;width:500px; height: 400px; padding-top:50px; box-sizing: border-box;}
+		.modal_roll_obj .swiper-wrapper {width:100%; height:100%}
+		.modal_roll_obj .swiper-slide {overflow:hidden;position:relative}
+		.modal_roll_obj .swiper-slide a{display: block; position: relative; font-size: 15px; color: #fff;}
+		.modal_roll_obj .swiper-slide a img{width: 25%;}
+		.modal_roll_obj .swiper-slide a:after{content:""; position: absolute; width:38px; height:38px; left: 0; top: 0; border:6px solid #c4aa53; background-color:transparent;opacity: 0;}
+		.modal_roll_obj .swiper-slide a:hover:after{opacity: 1; transition: all 0.25s ease-out;}
+		.modal_roll_obj .swiper-pagination{width:100%;text-align:center;position:absolute;left:0;bottom:5%;display: none;}
+		.modal_roll_obj .swiper-pagination-bullet{width:6px;height:6px;margin:0 5px;background:#000;border:2px #000 solid;border-radius:100%;opacity:1}
+		.modal_roll_obj .swiper-pagination-bullet-active{border:2px #000 solid;opacity:1;background:transparent}
+		.modal_roll_obj .swiper-button-prev{width:40px;height:50px;z-index:10;background-size:30px 20px;left:0; top:50%; margin-top:-25px;}
+		.modal_roll_obj .swiper-button-next{width:40px;height:50px;z-index:10;background-size:30px 20px;right:0; top:50%; margin-top:-25px;}
+     
+    </style>
+
+</head>
+<body>
+    
+    <div class="main_rolling">
+        <div class="container">
+            <div class="roll_obj">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="javascript:;" >00<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >01<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >02<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >03<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >04<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >05<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >06<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >07<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >08<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >09<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >10<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >11<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >12<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >13<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >14<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >15<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >16<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >17<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >18<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >19<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >20<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >21<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >22<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >23<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >24<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >25<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >26<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >27<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >28<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >29<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                        <div class="swiper-slide"><a href="javascript:;" >30<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main_modal_pop" class="common_layer" style="width:500px; height:500px; display: none; border:1px solid white;">
+        <a href="#" style="position: absolute; right:0;top:0; z-index: 500;" class="btn_close_pop" onclick="HideModalPopup('main_modal_pop'); return false;"><img src="http://image.tsherpa.co.kr/common/btn/btn_popup_close02.png" alt="레이어팝업 닫기"></a>
+        <div class="modal_roll_obj">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="javascript:;" >0<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >1<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >2<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >3<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >4<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >5<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >6<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >7<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >8<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >9<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >10<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >11<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >12<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >13<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >14<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >15<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >16<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >17<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >18<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >19<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >20<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >21<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >22<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >23<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >24<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >25<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >26<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >27<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >28<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >29<img src="images/thum2.jpg" alt="썸네일이미지"></a></div>
+                    <div class="swiper-slide"><a href="javascript:;" >30<img src="images/thum1.jpg" alt="썸네일이미지"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
+    <script>
+
+        //공통 사용 modal
+        var _ModalPopupBackgroundID = 'modal';
+        function ShowModalPopup(modalPopupID) {
+            var popupID = "#" + modalPopupID;
+            var popupMarginTop = $(popupID).height() / 2;
+            var popupMarginLeft = $(popupID).width() / 2;
+            $('body').css('overflow', 'hidden');
+            $(popupID).css({
+                'left': '50%',
+                'top': '50%',
+                'margin-top': -popupMarginTop,
+                'margin-left': -popupMarginLeft,
+                'display': 'block',
+                'position': 'fixed',
+                'z-index': 99999
+            });
+            var backgroundSelector = $('<div id="' + _ModalPopupBackgroundID + '" ></div>');
+            backgroundSelector.appendTo('body');
+            backgroundSelector.css({
+                'width': "100%",
+                'height': "100%",
+                'display': 'none',
+                'background-color': '#000',
+                'filter':'alpha(opacity=50)',
+                'position': 'fixed',
+                'top': 0,
+                'left': 0,
+                'z-index': 99998
+            });
+            backgroundSelector.fadeTo('fast', 0.8);
+            backgroundSelector.click(function(){
+                /* 2019.10.31 딤드 클릭해도 팝업 닫히지 않도록 class 예외 처리 추가 */
+                var isBg = $("#" + modalPopupID).hasClass("bgNone");
+                if(isBg) return;
+                /* //2019.10.31 딤드 클릭해도 팝업 닫히지 않도록 class 예외 처리 추가 */
+                HideModalPopup(modalPopupID)
+            });
+        }
+        function HideModalPopup(modalPopupID) {
+            $("#" + modalPopupID).css('display', 'none');
+            $("#" + _ModalPopupBackgroundID).remove();
+            $('body').css('overflow', 'auto');
+        }
+        function getSlideDataIndex(swipe){
+				var activeIndex = swipe.activeIndex;
+            var slidesLen = swipe.slides.length;
+            if(swipe.params.loop){
+                switch(swipe.activeIndex){
+                    case 0:
+                        activeIndex = slidesLen-3;
+                        break;
+                    case slidesLen-1:
+                        activeIndex = 0;
+                        break;
+                    default:
+                        --activeIndex;
+                }
+            }
+            return  activeIndex;
+        }
+        /////
+
+        modal_popup = {
+            init:function(_slide_num){
+                this.m_swiper = null;
+                this.plugin();
+                this.slide_num = parseInt(_slide_num , 10) + 1
+                //console.log("modal_popup" ,  parseInt( this.slide_num , 10))
+                this.move( this.slide_num)
+            },
+            plugin:function(){                
+                this.m_swiper = new Swiper('.modal_roll_obj .swiper-container', {
+                    autoplay : false,
+                    nextButton: '.modal_roll_obj .swiper-button-next',
+                    prevButton: '.modal_roll_obj .swiper-button-prev',
+                    pagination: '.modal_roll_obj .swiper-pagination',
+                    paginationClickable: false,
+                    loop: true,
+                    autoHeight: true,
+                    spaceBetween: 5,
+                    slidesPerView:1,
+                    onSlideChangeEnd : function(event){
+                        var num = getSlideDataIndex(event)
+                        //console.log(num)
+                    }
+                })
+            },
+            move:function(slide_num){ 
+                console.log("move " ,  slide_num)              
+                this.m_swiper.slideTo(slide_num)
+            }
+
+        }
+
+
+
+        $(function(){
+            var s_swiper = new Swiper('.roll_obj .swiper-container', {
+                autoplay : false,
+                nextButton: '.roll_obj .swiper-button-next',
+                prevButton: '.roll_obj .swiper-button-prev',
+                pagination: '.roll_obj .swiper-pagination',
+                paginationClickable: false,
+                loop: true,
+                autoHeight: true,
+                spaceBetween: 5,
+                slidesPerView:21,
+                onSlideChangeEnd : function(event){
+                    var num = getSlideDataIndex(event)
+                    console.log(num)
+                }
+            })
+
+            $(".roll_obj .swiper-slide a").click(function(){
+                var num = $(this).parent().attr('data-swiper-slide-index')
+                console.log("썸네일 클릭 " ,  num)
+                ShowModalPopup('main_modal_pop');
+                modal_popup.init(num)
+
+            })
+        })
+
+        
+
+
+        
+    </script>
+</body>
+</html>
